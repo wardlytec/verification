@@ -182,18 +182,23 @@
     font-size: 0.9rem;
   }
 
-  .review-header {
-    flex-direction: column;
+  .review-row-1 {
+    flex-direction: row;
     gap: var(--spacing-sm);
   }
 
-  .review-header > div:last-child {
-    align-self: flex-end;
-    text-align: right;
+  .review-row-2 {
+    flex-direction: row;
+    gap: var(--spacing-sm);
+  }
+
+  .reviewer-info {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-sm);
   }
 
   .review-date {
-    margin-top: var(--spacing-xs);
     font-size: 0.7rem;
   }
 
