@@ -182,6 +182,21 @@
     font-size: 0.9rem;
   }
 
+  .review-header {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+
+  .review-header > div:last-child {
+    align-self: flex-end;
+    text-align: right;
+  }
+
+  .review-date {
+    margin-top: var(--spacing-xs);
+    font-size: 0.7rem;
+  }
+
   .phone {
     max-width: 300px;
   }
