@@ -255,20 +255,20 @@ async function loadReviews() {
 
       reviewsHtml += `
         <div class="review-card">
-          <div class="review-header">
+          <div class="review-row-1">
             <div class="reviewer-info">
               <div class="reviewer-avatar">${name.charAt(0).toUpperCase()}</div>
-              <div>
-                <div class="reviewer-name" onclick="handleNameClick('${escapeHtml(name)}', this)" style="cursor: pointer;" data-clicks="0">${escapeHtml(name)}</div>
-                <div class="reviewer-location">📍 ${escapeHtml(location)}</div>
-              </div>
+              <div class="reviewer-name" onclick="handleNameClick('${escapeHtml(name)}', this)" style="cursor: pointer;" data-clicks="0">${escapeHtml(name)}</div>
             </div>
-            <div>
-              <div class="review-stars">${stars}</div>
-              <div class="review-date">🕒 ${new Date(review.created_at).toLocaleDateString('ar-EG')}</div>
-            </div>
+            <div class="review-stars">${stars}</div>
           </div>
-          <div class="review-text">${escapeHtml(comment)}</div>
+          <div class="review-row-2">
+            <div class="reviewer-location">📍 ${escapeHtml(location)}</div>
+            <div class="review-date">🕒 ${new Date(review.created_at).toLocaleDateString('ar-EG')}</div>
+          </div>
+          <div class="review-row-3">
+            <div class="review-text">${escapeHtml(comment)}</div>
+          </div>
         </div>
       `;
     });
