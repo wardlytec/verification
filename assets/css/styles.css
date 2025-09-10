@@ -662,10 +662,21 @@ header {
   border-color: rgba(255, 81, 0, .3);
 }
 
-.review-header {
+.review-row-1 {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
+  margin-bottom: var(--spacing-sm);
+}
+
+.review-row-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-sm);
+}
+
+.review-row-3 {
   margin-bottom: var(--spacing-sm);
 }
 
