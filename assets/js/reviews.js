@@ -263,10 +263,12 @@ async function loadReviews() {
                 <div class="reviewer-location">📍 ${escapeHtml(location)}</div>
               </div>
             </div>
-            <div class="review-stars">${stars}</div>
+            <div>
+              <div class="review-stars">${stars}</div>
+              <div class="review-date">🕒 ${new Date(review.created_at).toLocaleDateString('ar-EG')}</div>
+            </div>
           </div>
           <div class="review-text">${escapeHtml(comment)}</div>
-          <div class="review-date">🕒 ${new Date(review.created_at).toLocaleDateString('ar-EG')}</div>
         </div>
       `;
     });
